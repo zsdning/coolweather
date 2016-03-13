@@ -40,4 +40,14 @@ public class Country {
     public void setCityId(int cityId) {
         this.cityId = cityId;
     }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "id=" + id +
+                ", countryName='" + countryName + '\'' +
+                ", countryCode='" + countryCode + '\'' +
+                ", cityId=" + cityId +
+                '}';
+    }
 }

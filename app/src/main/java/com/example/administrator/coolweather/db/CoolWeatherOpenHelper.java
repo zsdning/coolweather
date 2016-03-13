@@ -3,6 +3,7 @@ package com.example.administrator.coolweather.db;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by Administrator on 2016/3/11.
@@ -43,6 +44,7 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_PROVINCE);//创建Province表
         db.execSQL(CREATE_CITY);//创建City表
         db.execSQL(CREATE_COUNTRY);//创建Country表
+        Log.d("database","secceed");
     }
 
     @Override
