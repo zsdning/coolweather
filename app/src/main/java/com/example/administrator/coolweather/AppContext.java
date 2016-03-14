@@ -11,8 +11,8 @@ public class AppContext extends Application {
     private static Context instance;
 
     @Override
-    public void onCreate()
-    {
+    public void onCreate() {
+        super.onCreate();
         instance = getApplicationContext();
     }
 
